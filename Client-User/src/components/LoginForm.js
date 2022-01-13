@@ -6,7 +6,7 @@ function LoginForm ({ handleSubmit, username, hanleUsernameChange, password, han
 
   return (
     <>
-      <Togglable buttonLable='Show login'>
+      <Togglable buttonLable='Login'>
         <form
           onSubmit={handleSubmit}
         >
@@ -24,7 +24,7 @@ function LoginForm ({ handleSubmit, username, hanleUsernameChange, password, han
             placeholder='Password'
             onChange={handlePasswordChange}
           />
-          <button>
+          <button className="btn btn-primary">
             Login
           </button>
         </form>
