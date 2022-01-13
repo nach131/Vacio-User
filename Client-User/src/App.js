@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react'
 
 import { loginServices, setToken } from './services/login'
 import LoginForm from './components/LoginForm'
+import Portada from './components/Portada';
+
+import 'bootswatch/dist/yeti/bootstrap.min.css'
 
 function App () {
 
@@ -67,9 +70,8 @@ function App () {
 
   return (
     <div className="App">
-
+      <Portada />
       <Notification message={errorMessage} />
-
       {
         user
           ? <h1>Usuario login ok</h1>
@@ -81,8 +83,6 @@ function App () {
             handleSubmit={handleLogin}
           />
       }
-
-
 
 
     </div>

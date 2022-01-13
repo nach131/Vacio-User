@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #222;
+  text-align: left;
+  background-color: #fff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.portada {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4) !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.index {
+  width: 100vw;
+  height: 100vh;
+}
+.masthead {
   color: white;
+  min-height: 30rem;
+  height: 100%;
+  padding-top: 8rem;
+  /* background: url("../unsplash.jpg"); */
+  background: url("https://source.unsplash.com/random");
+  /* background: url("https://source.unsplash.com/user/nach131"); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.masthead h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
 }
