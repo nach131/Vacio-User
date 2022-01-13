@@ -58,8 +58,12 @@ function Portada () {
     }
 
     return (
-      <div className="error">
-        {message}
+      <div className="text-center mx-auto col-4">
+        <div className="error pb-3 alert alert-dismissible alert-danger">
+          <h4>
+            {message}
+          </h4>
+        </div>
       </div>
     )
   }
@@ -70,7 +74,7 @@ function Portada () {
       <header className="masthead d-flex">
         <div className="container text-center my-auto">
           <h1 className="mb-1 portada">Control</h1>
-          <h3 className="-mb-5 portada">
+          <h3 className="mb-3 portada">
             <em>enunpimpam</em>
           </h3>
           <Notification message={errorMessage} />
