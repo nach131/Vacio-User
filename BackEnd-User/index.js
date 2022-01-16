@@ -5,14 +5,12 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 
-const User = require('./models/User')
-
 const userRouter = require('./controllers/users')
 const loginRouter = require('./controllers/login')
 
 app.use(cors())
 app.use(express.json())
-app.use(express.static('build'))
+app.use(express.static('../Client-User/build'))
 
 app.get('/', (request, response) => {
   console.log(request.ip)

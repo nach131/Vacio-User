@@ -4,6 +4,7 @@
   "description": "Ejemplo de usuario en nodes",
   "main": "index.js",
   "scripts": {
+    "build": "npm --prefix ../Client-User run build",
     "dev": "NODE_ENV=development nodemon index.js",
     "start": "NODE_ENV=production node index.js"
   },
